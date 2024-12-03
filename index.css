@@ -30,6 +30,70 @@ body {
     font-size: 22px;
 }
 
+.number-input {
+    margin-top: 40px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4ADF86;
+}
+
+#title-toggle {
+    margin-top: 40px;
+    width: 100%;
+    color: #D5D4D8;
+    font-size: 14px;
+}
+
+/* copied this code on the w3schools site: https://www.w3schools.com/howto/howto_css_switch.asp */
+/* starts here */
+.switch {
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+input:checked + .slider {
+    background-color: #4ADF86; 
+}
+
+input:checked + .slider:before {
+    transform: translateX(25px); 
+}
+/* ends here */
+/* copied this code on the w3schools site: https://www.w3schools.com/howto/howto_css_switch.asp */
+
 #button-style {
     margin-top: 40px;
     background-color: #10B981;

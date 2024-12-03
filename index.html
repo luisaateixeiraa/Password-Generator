@@ -14,10 +14,16 @@
             <p id="title">Generate a</p>
             <p id="complement-title">random password</p>
             <p id="subtitle">Never use an insecure password again.</p>
+            <input id="number-input" class="number-input" type="number" placeholder="choose number between 1 to 15" required>
+            <p id="title-toggle">Activate if you don't want numbers and symbols in random passwords:</p>
+            <label class="switch">
+                <input id="toggle-check" type="checkbox">
+                <span class="slider"></span>
+            </label>
             <button id="button-style" onclick="generateRandomPassword()">Generate Passwords</button>
             <div class ="section-passwords">
-                <span class="first-random-password" id="first-password"> </span>
-                <span class="second-random-password" id="second-password"> </span>
+                <span class="first-random-password" id="first-password" onclick="copyWhenClickOnPassword(firstPassword, 'First password')"></span>
+                <span class="second-random-password" id="second-password" onclick="copyWhenClickOnPassword(secondPassword, 'Second password');"></span>
             </div>
         </div>
         <script src="index.js"></script>
