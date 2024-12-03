@@ -37,10 +37,12 @@ function onToggleGetRandomPassword() {
 }
 
 function randomPasswordLenghtAndCheckToggle() {
-    if (input.value === "" || input.value < "0" || input.value >= "0" && input.value <= "4") {
-        alert("Please enter a number greater than 4")
+    if (input.value === "" || input.value <= "0") {
+        alert("Please enter a number greater than 4 and less than 16")
     } else if (input.value > 15) {
         alert("Please enter a number less than 16")
+    } else if (input.value < 5) {
+        alert("Please enter a number greater than 4")
     } else {
         for ( let i = 0; i < input.value; i++ ) {
             if (toggle.checked === true) {
