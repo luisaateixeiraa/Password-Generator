@@ -36,6 +36,9 @@ body {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #4ADF86;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    cursor: pointer;
 }
 
 #title-toggle {
