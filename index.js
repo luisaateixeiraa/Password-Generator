@@ -45,7 +45,7 @@ function randomPasswordLenghtAndCheckToggle() {
         alert("Please enter a number greater than 4")
     } else {
         for ( let i = 0; i < input.value; i++ ) {
-            if (toggle.checked === true) {
+            if (toggle.checked === false) {
                 onToggleGetRandomPassword()
             } else {
                 getRandomPassword()
